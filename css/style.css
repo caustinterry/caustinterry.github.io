@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 3px solid #cccccc;
+  padding: 28px;
+} */
+
+#namehead {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 9vw;
+  background-color: #4aaaa5;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+
+nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  padding: 17px;
+  border-bottom: 3px solid #cccccc;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/lghtmesh.png");
+  background-repeat: repeat-x repeat-y;
+  border-color: #dddddd;
+  color: #666666;
+  height: 100%;
+  margin: 0;
+}
+
+.profile {
+  width: 150px;
+  margin: 0 15px 10px 0;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  line-height: 45px;
+  margin: 0;
+  color: #4aaaa5;
+}
+
+.about {
+  border-bottom: 3px #666666;
+  border-width: 95%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #666666;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: #ffffff;
+  border: 5px #dddddd;
+  margin-top: 5vw;
+  margin-bottom: 6vw;
+}
+
+p {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.footer {
+  background-color: #666666;
+  border-top: 8px solid #4aaaa5;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration-color: #dddddd;
+  text-align: center;
+  margin-top: 5vw;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #666666;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 10vw;
+}
+
+.imgWrap {
+  position: relative;
+  margin: 10px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
+  background-color: #4aaaa5;
+  color: white;
+  text-align: center;
+}
+.row-buffer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
