@@ -9,17 +9,19 @@
 }
 
 a {
-  padding: 10px;
+  padding: 15px;
   color: black;
 }
 
 a:hover {
-  color: bisque;
+  color: #666666;
 }
 
 .profile {
-  width: 150px;
-  margin: 0 15px 10px 0;
+  width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 input[type="text"],
 select,
@@ -35,7 +37,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #4aaaa5;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
