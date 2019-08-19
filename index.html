@@ -74,13 +74,19 @@
           >
           <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
           <a class="nav-item nav-link" href="about.html">About Me</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
+          <a
+            class="nav-item nav-link disabled"
+            id="contact"
+            data-toggle="modal"
+            data-target=".contact-modal-xl"
+            >Contact</a
+          >
 
           <a
             class="nav-item nav-link"
             id="resume"
             data-toggle="modal"
-            data-target=".bd-example-modal-xl"
+            data-target=".resume-modal-xl"
             >Resume</a
           >
         </div>
@@ -88,7 +94,7 @@
     </nav>
 
     <div
-      class="modal fade bd-example-modal-xl"
+      class="modal fade resume-modal-xl"
       tabindex="-1"
       role="dialog"
       aria-labelledby="myExtraLargeModalLabel"
@@ -101,6 +107,39 @@
             width="100%"
             height="500px"
           >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade contact-modal-xl"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myExtraLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <iframe>
+            <form action="action_page.php">
+              <label for="name">Name</label>
+              <input id="nameInput" type="text" placeholder="Your name.." />
+
+              <label for="email">Email</label>
+              <input id="emailInput" type="text" placeholder="Your email.." />
+
+              <label for="subject">Message</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="..."
+                style="height:200px"
+              >
+              </textarea>
+
+              <input type="submit" value="Submit" id="contact-submit" />
+            </form>
           </iframe>
         </div>
       </div>
