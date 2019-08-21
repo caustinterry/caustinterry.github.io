@@ -14,6 +14,8 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 $("#contact-submit").on("click", function() {
+  event.preventDefault();
+
   var name = $("#nameInput")
     .val()
     .trim();
@@ -24,9 +26,15 @@ $("#contact-submit").on("click", function() {
     .val()
     .trim();
 
-  database.ref("/contactData").set({
+  var contactInput = {
     name: name,
     email: email,
     message: message
-  });
+  };
+
+  database.ref().push(contactInput);
+  $("#nameInput").val("");
+  $("#emailInput").val("");
+  $("#subject").val("");
+  return false;
 });
