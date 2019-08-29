@@ -14,4 +14,4 @@ All the links within the portfolio are directed to the corresponding project pag
 
 ## Authors
 
-* **Austin Terry** - *Initial work* - [caustinterry](https://github.com/caustinterry)
+* **Austin Terry** - [caustinterry](https://github.com/caustinterry)
