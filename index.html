@@ -16,7 +16,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href="assets/css/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -41,51 +44,110 @@
     </script>
   </head>
   <body>
-    <!-- Image and text -->
-
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: black;"
-    >
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="assets/images/Logo.png"
-          width="50"
-          height="50"
-          class="d-inline-block align-top"
-          alt=""
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+    <header>
+      <!--Navbar-->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background-color: #1c2331"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html"
-            >Home <span class="sr-only">(current)</span></a
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#intro">
+            <img
+              src="assets/images/Logo.png"
+              width="50"
+              height="50"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+          <!-- Collapse button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#basicExampleNav"
+            aria-controls="basicExampleNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-item nav-link" href="about.html">About Me</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <a
-            class="nav-item nav-link"
-            id="resume"
-            data-toggle="modal"
-            data-target=".resume-modal-xl"
-            >Resume</a
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto smooth-scroll">
+              <li class="nav-item">
+                <a class="nav-link" href="#intro">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-item nav-link"
+                  id="resume"
+                  data-toggle="modal"
+                  data-target=".resume-modal-xl"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+            <!-- Links -->
+            <!-- Social Icon  -->
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/caustinterry"
+                  ><i class="fab fa-github fa-lg"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/caustinterry/"
+                  ><i class="fab fa-linkedin-in fa-lg"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible content -->
+        </div>
+      </nav>
+      <!--/.Navbar-->
+      <!--Mask-->
+      <div id="intro" class="view">
+        <div class="mask rgba-black-strong">
+          <div
+            class="container-fluid d-flex align-items-center justify-content-center h-100"
           >
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-md-10">
+                <!-- Heading -->
+                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">
+                  Austin Terry
+                </h2>
+
+                <!-- Divider -->
+                <hr />
+
+                <!-- Description -->
+                <h4 class="white-text my-4">
+                  Developer | Accountant | Wizard | Cool Dude
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+      <!--/.Mask-->
+    </header>
 
     <div
       class="modal fade resume-modal-xl"
@@ -97,7 +159,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <iframe
-            src="files/Christopher Austin Terry - Resume.pdf"
+            src="./files/Austin Terry Resume.pdf"
             width="100%"
             height="500px"
           >
@@ -106,71 +168,249 @@
       </div>
     </div>
 
-    <!-- <div
-      class="modal fade contact-modal-xl"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myExtraLargeModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <iframe>
-            <form action="action_page.php">
-              <label for="name">Name</label>
-              <input id="nameInput" type="text" placeholder="Your name.." />
+    <main class="mt-5">
+      <div class="container">
+        <!--Section: Portfolio-->
+        <section id="portfolio" class="text-center">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img src="assets/images/CRUDProject.png" class="img-fluid" />
+                <a href="https://crud-masters.herokuapp.com/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-              <label for="email">Email</label>
-              <input id="emailInput" type="text" placeholder="Your email.." />
+              <h4 class="my-4 font-weight-bold">
+                Customizable Residence Upkeep Database
+              </h4>
+              <p class="grey-text">
+                Users can created a set of tasks and assign users to each
+                individual task. The tasks and users are stored in separate
+                tables in the database. I was primarily responsible for the
+                initial Front End design and API calls for Adding and Listing
+                the users. The app utilizes HTML, jQuery, MySQL, Sequelize,
+                Node.js, Express.js, Bootstrap and Heroku.
+              </p>
+            </div>
+            <!--Grid column-->
 
-              <label for="subject">Message</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="..."
-                style="height:200px"
-              >
-              </textarea>
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img src="assets/images/Burger-Town.png" class="img-fluid" />
+                <a href="https://blooming-lowlands-41656.herokuapp.com/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-              <input type="submit" value="Submit" id="contact-submit" />
-            </form>
-          </iframe>
+              <h4 class="my-4 font-weight-bold">Burger Town</h4>
+              <p class="grey-text">
+                Utilizing NodeJS, Express, Express Handlebars, MySQL and Heroku,
+                I developed an app that updates a database in real time. When
+                the user chooses to devour a burger it will move to the devoured
+                column. The User can then but the burger back on the menu by
+                clicking the button. The burger will then move back to the ready
+                to eat column.
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img
+                  src="assets/images/Weather-to-Drink.png"
+                  class="img-fluid"
+                />
+                <a href="https://austinterry.dev/Project-1/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h4 class="my-4 font-weight-bold">Weather or Not to Drink</h4>
+              <p class="grey-text">
+                A website that calls on several API's to pull the user's
+                location and provide an array of drink selections based upon the
+                current weather. I was primarily responsible for calling the
+                weather based upon user's browser location. As well as creating
+                a different API call if the user would prefer to input a
+                location instead.
+              </p>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img src="assets/images/Giphy-Pull.png" class="img-fluid" />
+                <a href="https://austinterry.dev/Giphy-Pull/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h4 class="my-4 font-weight-bold">Giphy Pull</h4>
+              <p class="grey-text">
+                Using the Giphy API the site will pull in 12 gif's of the
+                musician when clicking the button. The user can also add any of
+                their favorite artists to the array as well.
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img src="assets/images/Trivia-Game.png" class="img-fluid" />
+                <a href="https://austinterry.dev/Trivia-Game/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h4 class="my-4 font-weight-bold">Trivia Game</h4>
+              <p class="grey-text">
+                Built using jQuery this site provides the user with a countdown
+                timer in order to answer the trivia questions. Once the user
+                submits at the end or the timer reaches 0, the site will display
+                a results page counting the number of correct answers.
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="view overlay z-depth-1-half">
+                <img
+                  src="assets/images/Crystal-Collector.png"
+                  class="img-fluid"
+                />
+                <a href="https://austinterry.dev/unit-4-game/">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <h4 class="my-4 font-weight-bold">Trivia Game</h4>
+              <p class="grey-text">
+                A game built using jQuery that randomly generates an number as
+                well as a random number assigned to each crystal. When the
+                crystal is clicked it will add that random value to the Total
+                Score. Once the Total Score matches the Random Number the wins
+                will increase. If the Total Score goes over the losses will
+                increase.
+              </p>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!--Section: Examples-->
+
+        <hr class="my-5" />
+        <!--Section: about-->
+        <section id="about" class="text-center py-5">
+          <!-- Container -->
+          <div class="container">
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold mb-5">About</h2>
+
+            <div class="about">
+              <!--Avatar-->
+              <div class="avatar mx-auto mb-4">
+                <img
+                  src="assets/images/Headshot-bw.jpg"
+                  class="rounded-circle img-fluid profile"
+                  alt="Profile Photo"
+                />
+              </div>
+              <!--Content-->
+              <p>
+                Full-Stack Web Developer utilizing a background in Accounting
+                and Management to help build teams and drive progress. I
+                recently earned a certificate in Full Stack Development from the
+                University of Denver, with newly developed skills in JavaScript,
+                CSS, React.js, Node.js, MongoDB, SQL, and responsive web design.
+                With every project, my aim was to create a user experience that
+                is simple and easy to use. Excited to leverage my skills in the
+                future as part of a face-paced, quality-driven team in order to
+                build better products.
+              </p>
+            </div>
+          </div>
+          <!-- Container -->
+        </section>
+        <!--Section: about-->
+        <hr class="my-5" />
+
+        <!--Section: contact-->
+        <section id="contact" class="text-center py-5">
+          <div class="streak streak-md streak-photo">
+            <div class="flex-center rgba-black-light pattern-1">
+              <div class="black-text smooth-scroll mx-4">
+                <h4 class="h4-responsive mb-5 wow fadeIn">
+                  Where to find me
+                </h4>
+                <div class="text-center">
+                  <a
+                    href="mailto:c.austin.terry@gmail.com"
+                    target="_top"
+                    class="btn btn-outline-black wow fadeIn "
+                    data-offset="100"
+                    data-wow-delay="0.2s"
+                    >Contact</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Section: contact-->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer unique-color-dark">
+      <!--Footer-->
+
+      <!-- Social buttons -->
+      <div class="unique-color-dark">
+        <div class="container">
+          <!--Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!--Grid column-->
+            <div
+              class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0"
+            >
+              <h6 class="mb-0 white-text">
+                Check out my social media!
+              </h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+              <!-- Github -->
+              <a class="li-ic" href="https://github.com/caustinterry"
+                ><i class="fab fa-github white-text mr-4"></i
+              ></a>
+              <!--Linkedin-->
+              <a class="li-ic" href="https://www.linkedin.com/in/caustinterry/">
+                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+              </a>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
         </div>
       </div>
-    </div> -->
-    <video autoplay muted loop id="myVideo">
-      <source
-        src="assets/video/Autumn - 1080.mp4"
-        data-src=""
-        type="video/mp4"
-      />
-    </video>
-    <div class="container">
-      <div class="row fixed-bottom">
-        <div class="col-4"></div>
-        <div class="col-4 text-center">
-          <a class="socialLink" href="https://github.com/caustinterry">
-            <i class="fab fa-github fa-3x socialIcon"></i
-          ></a>
+      <!-- Social buttons -->
+    </footer>
 
-          <a
-            class="socialLink"
-            href="https://www.linkedin.com/in/christopher-austin-terry-82167222/"
-          >
-            <i class="fab fa-linkedin-in fa-3x socialIcon"></i
-          ></a>
-
-          <a class="socialLink" href="">
-            <i class="fab fa-facebook-f fa-3x socialIcon"></i>
-          </a>
-
-          <a class="socialLink" href="">
-            <i class="fab fa-twitter fa-3x socialIcon"></i>
-          </a>
-        </div>
-        <div class="col-4"></div>
-      </div>
-    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

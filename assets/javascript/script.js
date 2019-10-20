@@ -33,8 +33,10 @@ $("#contact-submit").on("click", function() {
   };
 
   database.ref().push(contactInput);
+
   $("#nameInput").val("");
   $("#emailInput").val("");
   $("#subject").val("");
+
   return false;
 });

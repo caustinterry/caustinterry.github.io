@@ -3,68 +3,38 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.socialIcon {
-  display: block;
-  text-align: center;
-}
-
-.btn {
-  background-color: black;
-  color: white;
-  border: none;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.btn:hover {
-  background-color: #666666;
-}
-
-a {
-  padding: 15px;
-  color: black;
-}
-
-a:hover {
-  color: #666666;
-}
-
 .profile {
   width: 325px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-input[type="text"],
-select,
-textarea {
+
+html,
+body,
+header,
+#intro {
+  height: 100%;
+}
+
+#intro {
+  background: url("../images/Nevis.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.view .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
   width: 100%;
-  padding: 12px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  resize: vertical;
+  height: 100%;
+  background-attachment: fixed;
 }
-
-input[type="submit"] {
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #666666;
-}
-
-.form {
-  margin-bottom: 1rem;
-}
-
-#myVideo {
-  max-width: 100%;
-  max-height: 100%;
+.white-text {
+  color: #fff !important;
 }
