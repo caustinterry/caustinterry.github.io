@@ -9,8 +9,6 @@ All the links within the portfolio are directed to the corresponding project pag
 ## Built With
 
 * [Bootstrap](https://getbootstrap.com/) - The CSS framework used
-* [jQuery](https://jquery.com//) - The language most of the projects have been built with to date
-
 
 ## Authors
 
